@@ -1,0 +1,65 @@
+<header id="siteHeader" class="sticky top-0 z-50 bg-[#0B0F1A]/90 backdrop-blur-xl border-b border-gray-800/50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 logo-group">
+            <img src="./logo.png" class="logo-svg h-11 w-auto object-contain" alt="ProfiService">
+            <div>
+                <span class="text-xl font-black tracking-tight text-white block leading-none">ProfiService</span>
+                <span class="text-[11px] font-semibold tracking-widest uppercase" style="color: var(--primary);">Сервісний центр</span>
+            </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-8">
+            <a href="#services" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Послуги</a>
+            <a href="#reviews" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Відгуки</a>
+            <a href="#map" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Контакти</a>
+        </nav>
+
+        <!-- Desktop Contacts -->
+        <div class="hidden md:flex items-center gap-4">
+            <div class="flex items-center gap-2">
+                <a href="https://t.me/+380980900447" target="_blank" class="w-9 h-9 rounded-full bg-white/5 hover:bg-sky-600 flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 border border-white/5 hover:border-sky-600">
+                    <i class="fa-brands fa-telegram text-sm"></i>
+                </a>
+                <a href="viber://chat?number=%2B380980900447" class="w-9 h-9 rounded-full bg-white/5 hover:bg-violet-600 flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 border border-white/5 hover:border-violet-600">
+                    <i class="fa-brands fa-viber text-sm"></i>
+                </a>
+            </div>
+            <div class="h-6 w-px bg-gray-800"></div>
+            <a href="tel:0980900447" class="flex items-center gap-2 text-white font-bold hover:opacity-80 transition-opacity text-base">
+                <span class="w-8 h-8 rounded-full flex items-center justify-center" style="background: var(--primary);">
+                    <i class="fa-solid fa-phone text-xs text-white"></i>
+                </span>
+                098 090 0447
+            </a>
+        </div>
+
+        <!-- Mobile: Phone + Hamburger -->
+        <div class="flex md:hidden items-center gap-3">
+            <a href="tel:0980900447" class="w-11 h-11 rounded-xl flex items-center justify-center font-bold active:scale-95 transition-transform text-white" style="background: var(--primary);">
+                <i class="fa-solid fa-phone text-base"></i>
+            </a>
+            <button onclick="toggleMobileNav()" class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 cursor-pointer lg:hidden">
+                <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Nav Panel -->
+    <div id="mobileNav" class="mobile-nav fixed top-20 right-0 bottom-0 w-72 bg-[#0B0F1A]/98 backdrop-blur-xl border-l border-gray-800/50 p-6 z-50 lg:hidden">
+        <nav class="flex flex-col gap-4">
+            <a href="#services" onclick="closeMobileNav()" class="text-lg font-semibold text-gray-300 hover:text-white py-3 border-b border-gray-800/50 transition-colors">Послуги</a>
+            <a href="#reviews" onclick="closeMobileNav()" class="text-lg font-semibold text-gray-300 hover:text-white py-3 border-b border-gray-800/50 transition-colors">Відгуки</a>
+            <a href="#map" onclick="closeMobileNav()" class="text-lg font-semibold text-gray-300 hover:text-white py-3 border-b border-gray-800/50 transition-colors">Контакти</a>
+        </nav>
+        <div class="mt-8 flex items-center gap-3">
+            <a href="https://t.me/+380980900447" target="_blank" class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white transition-all">
+                <i class="fa-brands fa-telegram text-xl"></i>
+            </a>
+            <a href="viber://chat?number=%2B380980900447" class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white transition-all">
+                <i class="fa-brands fa-viber text-xl"></i>
+            </a>
+        </div>
+    </div>
+</header>

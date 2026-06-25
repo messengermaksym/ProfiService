@@ -1,0 +1,89 @@
+<section id="map" class="py-24 map-gradient border-t border-gray-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="reveal text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">
+                Як нас знайти
+            </h2>
+            <div class="reveal accent-divider mx-auto mb-5"></div>
+            <p class="reveal text-gray-400">
+                Ми розташовані в центрі Львова. Зручна локація, легко дістатися громадським транспортом.
+            </p>
+        </div>
+
+        <div class="reveal grid lg:grid-cols-12 gap-8">
+            <!-- Map -->
+            <div class="lg:col-span-8 glass-card rounded-2xl overflow-hidden" style="min-height: 400px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.7!2d24.0096174!3d49.8388302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add9a496cec07%3A0x68a8fdb3d9ef49d2!2sProfiService!5e0!3m2!1suk!2sua!4v1"
+                    width="100%"
+                    height="100%"
+                    style="border:0; min-height: 400px; filter: brightness(0.85) contrast(1.1) saturate(0.8);"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Розташування ProfiService на карті">
+                </iframe>
+            </div>
+
+            <!-- Contact Info Cards -->
+            <div class="lg:col-span-4 flex flex-col gap-4">
+                <!-- Address -->
+                <div class="glass-card rounded-2xl p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style="background: rgba(232,77,26,0.1);">
+                            <i class="fa-solid fa-location-dot" style="color: var(--primary);"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white mb-1">Адреса</p>
+                            <p class="text-sm text-gray-400">вулиця Шумлянських, 3,<br>м. Львів, 79016</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="glass-card rounded-2xl p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style="background: rgba(232,77,26,0.1);">
+                            <i class="fa-solid fa-phone" style="color: var(--primary);"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white mb-1">Телефон</p>
+                            <a href="tel:0980900447" class="text-base font-bold hover:opacity-80 transition-opacity" style="color: var(--primary-light);">098 090 0447</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schedule -->
+                <div class="glass-card rounded-2xl p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style="background: rgba(232,77,26,0.1);">
+                            <i class="fa-solid fa-clock" style="color: var(--primary);"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm font-bold text-white mb-2">Графік роботи</p>
+                            <div class="space-y-1.5 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Пн — Пт</span>
+                                    <span class="text-white font-medium">10:00 – 19:00</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Субота</span>
+                                    <span class="text-white font-medium">11:00 – 16:00</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Неділя</span>
+                                    <span class="font-semibold" style="color: var(--primary);">Вихідний</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Directions Button -->
+                <a href="https://maps.app.goo.gl/kj2BoxuuTW3R52hX7" target="_blank" class="btn-primary text-center cursor-pointer text-sm flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-diamond-turn-right"></i> Прокласти маршрут
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

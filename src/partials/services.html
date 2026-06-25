@@ -1,0 +1,111 @@
+<section id="services" class="py-24 relative border-t border-gray-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="reveal text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">
+                Послуги та орієнтовні ціни
+            </h2>
+            <div class="reveal accent-divider mx-auto mb-5"></div>
+            <p class="reveal text-gray-400">
+                Працюємо з брендами Asus, Lenovo, Dell, Acer, Samsung, Xiaomi та іншими. Точна ціна формується після безкоштовної діагностики.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1: Ноутбуки -->
+            <div class="reveal reveal-delay-1 service-card glass-card rounded-2xl overflow-hidden flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=500&q=80" alt="Чистка ноутбука" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                    <div class="absolute top-4 left-4 glass-card px-3 py-1.5 rounded-lg text-xs font-bold border border-white/10" style="color: var(--primary-light);">
+                        <i class="fa-solid fa-fire mr-1"></i> Популярно
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3 class="text-xl font-bold text-white mb-4">Ремонт та обслуговування ноутбуків</h3>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-6 flex-1">
+                        <li class="flex justify-between items-center border-b border-gray-800/50 pb-2">
+                            <span>Чистка + заміна термопасти (Arctic MX-4)</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">від 450 грн</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-800/50 pb-2">
+                            <span>Заміна дисплея (матриці) за 1-2 дні</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">від 3000 грн</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-800/50 pb-2">
+                            <span>Заміна акумуляторної батареї</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">від 6000 грн</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>Відновлення корпусу / ремонт петель</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">від 800 грн</span>
+                        </li>
+                    </ul>
+                    <button onclick="openModal('Ремонт ноутбуків')" class="w-full py-3.5 rounded-xl font-bold text-sm transition-all duration-300 cursor-pointer border border-gray-700/50 text-gray-200 hover:text-white hover:border-transparent" style="background: transparent;" onmouseover="this.style.background='linear-gradient(135deg, var(--primary-light), var(--primary))'" onmouseout="this.style.background='transparent'">
+                        Замовити ремонт
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 2: Смартфони -->
+            <div class="reveal reveal-delay-2 service-card glass-card rounded-2xl overflow-hidden flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Ремонт смартфонів" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3 class="text-xl font-bold text-white mb-4">Ремонт смартфонів та планшетів</h3>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-6 flex-1">
+                        <li class="flex justify-between items-center border-b border-gray-800/50 pb-2">
+                            <span>Заміна дисплея (Оригінал з гарантією)</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">від 1200 грн</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-800/50 pb-2">
+                            <span>Заміна гнізда зарядки / шлейфу</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">від 400 грн</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-800/50 pb-2">
+                            <span>Заміна батареї (смартфон)</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">від 500 грн</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>Чистка динаміків та мікрофонів</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">від 200 грн</span>
+                        </li>
+                    </ul>
+                    <button onclick="openModal('Ремонт смартфонів')" class="w-full py-3.5 rounded-xl font-bold text-sm transition-all duration-300 cursor-pointer border border-gray-700/50 text-gray-200 hover:text-white hover:border-transparent" style="background: transparent;" onmouseover="this.style.background='linear-gradient(135deg, var(--primary-light), var(--primary))'" onmouseout="this.style.background='transparent'">
+                        Замовити ремонт
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 3: Софт та Складні випадки -->
+            <div class="reveal reveal-delay-3 service-card glass-card rounded-2xl overflow-hidden flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&w=500&q=80" alt="Налаштування Windows" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3 class="text-xl font-bold text-white mb-4">Налаштування ПЗ та складний ремонт</h3>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-6 flex-1">
+                        <li class="flex justify-between items-center border-b border-gray-800/50 pb-2">
+                            <span>Встановлення Windows 11 + пак програм</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">від 500 грн</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-800/50 pb-2">
+                            <span>Заміна/Апгрейд SSD диску на більший</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">від 350 грн</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-800/50 pb-2">
+                            <span>Розблокування телефону (Samsung/Xiaomi)</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">від 400 грн</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>Діагностика та ремонт після залиття</span>
+                            <span class="font-semibold text-white text-right pl-3 whitespace-nowrap">Розрахунок</span>
+                        </li>
+                    </ul>
+                    <button onclick="openModal('Налаштування ПЗ та Складний ремонт')" class="w-full py-3.5 rounded-xl font-bold text-sm transition-all duration-300 cursor-pointer border border-gray-700/50 text-gray-200 hover:text-white hover:border-transparent" style="background: transparent;" onmouseover="this.style.background='linear-gradient(135deg, var(--primary-light), var(--primary))'" onmouseout="this.style.background='transparent'">
+                        Замовити ремонт
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
